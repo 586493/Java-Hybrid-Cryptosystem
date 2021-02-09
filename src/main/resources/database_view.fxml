@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/" fx:controller="hybrid.crypto.view.DatabaseController">
+   <Text fx:id="databaseName" layoutX="60.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-alignment: center;" text="Text" textAlignment="CENTER" wrappingWidth="480.0000011920929" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="22.0">
+      <font>
+         <Font size="36.0" />
+      </font>
+   </Text>
+   <ComboBox fx:id="cardsComboBox" focusTraversable="false" layoutX="201.0" layoutY="116.0" prefWidth="150.0" promptText="cards" AnchorPane.bottomAnchor="230.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="180.0" />
+   <Button fx:id="addCardFromFile" focusTraversable="false" layoutX="369.0" layoutY="116.0" mnemonicParsing="false" onAction="#addCardFromFileClicked" text="append new card" AnchorPane.bottomAnchor="290.0" AnchorPane.leftAnchor="390.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="120.0" />
+   <Button fx:id="lockBtn" focusTraversable="false" layoutX="14.0" layoutY="27.0" mnemonicParsing="false" onAction="#lockBtnClicked" text="🔒" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="540.0" AnchorPane.topAnchor="390.0" />
+   <Button fx:id="createMyCardBtn" focusTraversable="false" layoutX="110.0" layoutY="116.0" mnemonicParsing="false" onAction="#saveCardToFileBtnClicked" text="share card" AnchorPane.bottomAnchor="290.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="390.0" AnchorPane.topAnchor="120.0" />
+   <Button fx:id="chooseFileToProcBtn" focusTraversable="false" layoutX="502.0" layoutY="237.0" mnemonicParsing="false" onAction="#chooseFileToProcBtnClicked" text="choose file" AnchorPane.bottomAnchor="160.0" AnchorPane.leftAnchor="430.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="250.0" />
+   <TextField fx:id="pathToFileToProc" focusTraversable="false" layoutX="177.0" layoutY="237.0" promptText="file path" AnchorPane.bottomAnchor="160.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="250.0" />
+   <Button fx:id="startProcBtn" focusTraversable="false" layoutX="250.0" layoutY="391.0" mnemonicParsing="false" onAction="#startProcBtnClicked" text="OK" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="215.0" AnchorPane.rightAnchor="215.0" AnchorPane.topAnchor="370.0" />
+   <Button fx:id="removeCardBtn" focusTraversable="false" layoutX="274.0" layoutY="128.0" mnemonicParsing="false" onAction="#removeCardBtnClicked" text="remove card" AnchorPane.bottomAnchor="290.0" AnchorPane.leftAnchor="230.0" AnchorPane.rightAnchor="230.0" AnchorPane.topAnchor="120.0" />
+   <Button fx:id="genNewAsymKeysBtn" focusTraversable="false" layoutX="479.0" layoutY="32.0" mnemonicParsing="false" onAction="#genNewAsymKeysBtnClicked" text="🔄🔑🔑" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="505.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="395.0" />
+   <ComboBox fx:id="modeComboBox" focusTraversable="false" layoutX="24.0" layoutY="46.0" onAction="#modeComboBoxClicked" prefWidth="150.0" promptText="mode" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="220.0" AnchorPane.topAnchor="310.0" />
+</AnchorPane>
